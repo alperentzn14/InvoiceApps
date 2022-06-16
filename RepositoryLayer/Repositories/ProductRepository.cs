@@ -1,6 +1,4 @@
-﻿
-
-using CoreLayer.Models;
+﻿using CoreLayer.Models;
 using CoreLayer.Repositories;
 using Microsoft.EntityFrameworkCore;
 

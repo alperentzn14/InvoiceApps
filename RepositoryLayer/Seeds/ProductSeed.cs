@@ -14,8 +14,7 @@ namespace RepositoryLayer.Seeds
                 Id = 1,
                 CustomerId = 1,
                 Name = "product 1",
-                Price = 100,
-                Quantity = 1
+                Price = 100
 
 
             },
@@ -23,9 +22,8 @@ namespace RepositoryLayer.Seeds
             {
                 Id = 2,
                 CustomerId = 2,
-                Name = "prodcut 3",
-                Price = 200,
-                Quantity = 2
+                Name = "prodcut 2",
+                Price = 200
 
 
             },
@@ -34,8 +32,7 @@ namespace RepositoryLayer.Seeds
                  Id = 3,
                  CustomerId = 3,
                  Name = "prodcut 3",
-                 Price = 600,
-                 Quantity = 3
+                 Price = 300
 
 
              });

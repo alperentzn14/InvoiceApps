@@ -10,9 +10,12 @@ namespace ServiceLayer.Mapping
         {
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<Customer, CustomerDto>().ReverseMap();
+            CreateMap<Invoice, InvoiceDto>().ReverseMap();
             CreateMap<ProductUpdateDto, Product>();
             CreateMap<CustomerUpdateDto, Customer>();
+            CreateMap<InvoiceUpdateDto, Invoice>();
             CreateMap<Product, ProductWithCustomerDto>();
+            CreateMap<Invoice, InvoiceDetailDto>();
             CreateMap<Customer, CustomerWithProductsDto>();
         }
     }

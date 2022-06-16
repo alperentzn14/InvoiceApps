@@ -19,6 +19,12 @@ namespace WEB.Services
             return response.Data;
         }
 
+        public async Task<List<ProductDto>> GetAllAsync()
+        {
+            var response = await _httpClient.GetFromJsonAsync<CustomResponseDto<List<ProductDto>>>("products");
+            return response.Data;
+        }
+
         public async Task<ProductDto> GetByIdAsync(int id)
         {
 

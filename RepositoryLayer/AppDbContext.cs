@@ -13,6 +13,7 @@ namespace RepositoryLayer
 
         public DbSet<Customer> Customers{ get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
 
         public override int SaveChanges()
         {
@@ -33,13 +34,10 @@ namespace RepositoryLayer
                                 break;
                             }
 
-
                     }
                 }
 
-
             }
-
 
             return base.SaveChanges();
         }
@@ -82,6 +80,7 @@ namespace RepositoryLayer
 
 
             base.OnModelCreating(modelBuilder);
+          
         }
     }
 }

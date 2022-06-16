@@ -35,6 +35,13 @@ builder.Services.AddHttpClient<CustomerApiService>(opt =>
 
 });
 
+builder.Services.AddHttpClient<InvoiceApiService>(opt =>
+{
+
+    opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+
+});
+
 
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
 

@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Update";
+}
+
+
+@model InvoiceDto
+<h1>Update İnvoice</h1>
+
+<div class="row">
+
+    <div  class=col-md-6>
+
+        <form asp-action="Update" method="post" asp-controller="Invoices">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Quantity"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+
+
+               <div class="form-group">
+                <label asp-for="Total"></label>
+                <input asp-for="Total" class="form-control" />
+                <span asp-validation-for="Total" class="text-danger"></span>
+            </div>
+
+               <div class="form-group">
+                <label asp-for="CustomerId"></label>
+                <select asp-for="CustomerId" asp-items="ViewBag.customers" class="form-control" ></select>
+               
+            </div>
+
+              <div class="form-group">
+                <label asp-for="ProductId"></label>
+                <select asp-for="ProductId" asp-items="ViewBag.products" class="form-control" ></select>
+               
+            </div>
+
+       <br />
+            <div class="form-group">
+
+               <button class="btn btn-primary">UPDATE</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+

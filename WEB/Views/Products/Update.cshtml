@@ -19,12 +19,6 @@
             </div>
 
 
-              <div class="form-group">
-                <label asp-for="Quantity"></label>
-                <input asp-for="Quantity" class="form-control" />
-                <span asp-validation-for="Quantity" class="text-danger"></span>
-            </div>
-
                <div class="form-group">
                 <label asp-for="Price"></label>
                 <input asp-for="Price" class="form-control" />
@@ -35,11 +29,11 @@
                 <label asp-for="CustomerId"></label>
                 <select asp-for="CustomerId" asp-items="ViewBag.customers" class="form-control" ></select>
                
-            </div>
+            </div><br />
 
-            <div class="form-group">
+           <div class="form-group">
 
-                <input type="submit" value="Update" class="btn-primary" />
+               <button class="btn btn-primary">UPDATE</button>
 
             </div>
         </form>
