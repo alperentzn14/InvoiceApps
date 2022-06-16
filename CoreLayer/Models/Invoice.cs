@@ -10,6 +10,7 @@
         public  Product? Product { get; set; }
 
         public decimal Total { get; set; }
+
          //public decimal SubTotal { get { return Product.Price * Quantity; } }
 
     }

@@ -33,8 +33,8 @@ namespace APILayer.Controllers
             return CreateActionResult(await _customerService.GetSingleCustomerByIdWithProductsAsync(customerId));
 
         }
+
         [ServiceFilter(typeof(NotFoundFilter<Customer>))]
-        // GET /api/customer/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -61,7 +61,7 @@ namespace APILayer.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
-        // DELETE api/customers/5
+    
         [HttpDelete("{id}")]
         public async Task<IActionResult> Remove(int id)
         {
